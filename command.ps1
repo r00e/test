@@ -1,3 +1,3 @@
-param($preString, $GO_PIPELINE_COUNTER)
+param($preString)
 
-gc file.txt | %{write-host $preString + $GO_PIPELINE_COUNTER + $preString + $_}
+gc file.txt | %{write-host $preString + $_}
